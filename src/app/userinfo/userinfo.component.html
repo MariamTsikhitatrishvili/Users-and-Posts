@@ -1,0 +1,36 @@
+<!-- show all properties of current user -->
+<div class="container">
+  <div>id:</div>
+  <div>{{ user.id }}</div>
+  <div>name:</div>
+  <div>{{ user.name }}</div>
+  <div>username:</div>
+  <div>{{ user.username }}</div>
+  <div>email:</div>
+  <div>{{ user.email }}</div>
+  <div class="header address">Address</div>
+  <div class="address">street:</div>
+  <div class="address">{{ user.address.street }}</div>
+  <div class="address">suite:</div>
+  <div class="address">{{ user.address.suite }}</div>
+  <div class="address">city:</div>
+  <div class="address">{{ user.address.city }}</div>
+  <div class="address">zipcode:</div>
+  <div class="address">{{ user.address.zipcode }}</div>
+  <div class="address">lat:</div>
+  <div class="address">{{ user.address.geo.lat }}</div>
+  <div class="address">ing:</div>
+  <div class="address">{{ user.address.geo.lng }}</div>
+  <div>phone:</div>
+  <div>{{ user.phone }}</div>
+  <div>website:</div>
+  <div>{{ user.website }}</div>
+  <div class="header company">Company</div>
+  <div class="company">name:</div>
+  <div class="company">{{ user.company.name }}</div>
+  <div class="company">catchPhrase:</div>
+  <div class="company">{{ user.company.catchPhrase }}</div>
+  <div class="company">bs:</div>
+  <div class="company">{{ user.company.bs }}</div>
+</div>
+<button routerLink="/usersinfo/userposts/{{ user.id }}">Posts</button>

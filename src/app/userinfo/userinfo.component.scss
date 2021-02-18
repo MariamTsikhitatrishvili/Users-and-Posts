@@ -1,0 +1,39 @@
+@import "./../../styles/fonts/fonts.scss";
+@import "./../../styles/variables/colors.scss";
+*{
+    font-family: $Assistant;
+}
+.container {
+  background-color: $backgroundColorPrimary;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 40%;
+  font-size: 20px;
+  font-family: $Assistant;
+  .header {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+  div {
+    border: 1px solid $borderColor;
+    padding: 10px;
+  }
+  .address {
+    background-color: $backgroundColorSecondary;
+  }
+  .company {
+    background-color: $backgroundColorSecondary;
+  }
+}
+button {
+  width: 40%;
+  height: 50px;
+  margin-top: 30px;
+  background-color: $buttonBackground;
+  text-decoration: none;
+  border: none;
+  font-size: 22px;
+  &:hover {
+    background-color: $buttonHover;
+  }
+}

@@ -1,0 +1,24 @@
+@import './../../styles/fonts/fonts.scss';
+@import './../../styles/variables/colors.scss';
+*{
+    font-family: $Assistant;
+}
+button {
+    display: block;
+    background-color: $buttonColor;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    width: 200px;
+    height: 66px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin: 0 auto 20px;
+    &:hover{
+        background-color: $whiteColor;
+        color: $blackColor;
+        border: 2px solid $buttonColor;
+    }
+}

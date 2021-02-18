@@ -1,0 +1,7 @@
+<!-- loop through posts array and return posts of user that matches current user id-->
+<div *ngFor="let post of posts">
+  <div *ngIf="post.userId === this.userId" class="posts">
+    <div><h3>{{ post.title | uppercase }}</h3>
+    <p>{{ post.body }}</p></div>
+  </div>
+</div>
